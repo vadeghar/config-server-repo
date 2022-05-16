@@ -1,1 +1,8 @@
-msg = Hello world - this is from config server – Production environment.
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
